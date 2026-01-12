@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club | CTC</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+  <link rel="icon" type="assets\logo\logo-icon.png"  href="assets/logo.png">
+ 
+   
+
+</head>
+<body class="bg-gray-50">
+   <!-- Navigation Bar -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <!-- Updated Logo with Image -->
+        <div class="logo-container">
+            <img src="assets\logo\logo-icon.png" alt="Coding Club Logo" class="logo-image">
+            <div class="logo-text-wrapper">
+                <span class="logo-text-main">Community for Technology and Coding</span>
+                <span class="logo-text-sub"></span>
+            </div>
+        </div>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#domains" class="nav-link">Domains</a>
+            <a href="#events" class="nav-link">Events</a>
+           
+            <a href="#team" class="nav-link">Team</a>
+            <!-- In the navigation bar, add WhatsApp icon -->
+<div class="nav-links" id="navLinks">
+    <!-- ... existing links ... -->
+    <a href="#contact" class="nav-link">Contact</a>
+    <div class="social-icons">
+        <a href="https://chat.whatsapp.com/GXtNVWbiDFi1IkRotX9yOW" target="_blank" class="social-icon whatsapp-icon" title="Join WhatsApp Group">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+   
+                <!-- <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a> -->
+                <!-- <a href="https://github.com" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a> -->
+                <!-- <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a> -->
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Coding Club</h1>
+                <h2 class="hero-subtitle">Rajkiya engineering college, Sonbhadra</h2>
+                <p class="hero-description">
+                    The Coding Club at Community for Technology and Coding (CTC) is a vibrant community of passionate developers, programmers, and tech enthusiasts. We aim to cultivate a strong coding culture by organizing workshops, hackathons, and collaborative projects. Our goal is to empower students to learn, innovate, and excel in the world of technology.
+                <div class="hero-buttons">
+                    <a href="#events" class="btn-primary">Upcoming Events</a>
+                    <a href="#team" class="btn-secondary">Meet Our Team</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Coding Illustration" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section class="section" id="domains">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Domains</h2>
+                <p class="section-subtitle">Explore various programming domains we focus on</p>
+            </div>
+            
+            <div class="domains-grid" id="domainsGrid">
+                <!-- Domains will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section bg-gray-100" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Events & Workshops</h2>
+                <p class="section-subtitle">Stay updated with our latest events and workshops</p>
+            </div>
+            
+            <div class="events-tabs">
+                <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+                <button class="tab-btn" data-tab="past">Past Events</button>
+            </div>
+            
+            <div class="events-content">
+                <div class="tab-content active" id="upcomingEvents">
+                    <div class="events-grid">
+                        <!-- Upcoming events will be loaded via JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="pastEvents">
+                    <div class="events-grid">
+                        <!-- Past events will be loaded via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Team Section -->
+   <section class="section bg-gray-100" id="team">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">Meet the people behind Coding Club</p>
+        </div>
+        
+        <div class="team-tabs">
+            <!-- CHANGE: Core Team ko active rakho -->
+            <button class="team-tab-btn active" data-team="core">Core Team</button>
+            <!-- CHANGE: Junior Core Team ko inactive rakho -->
+            <button class="team-tab-btn" data-team="faculty">Junior Core Team</button>
+        </div>
+        
+        <div class="team-content">
+            <!-- CHANGE: Faculty/Junior Core ko inactive rakho -->
+            <div class="team-category" id="facultyTeam">
+                <div class="team-grid">
+                    <!-- Faculty/Junior Core team will be loaded via JavaScript -->
+                </div>
+            </div>
+            
+            <!-- CHANGE: Core Team ko active rakho -->
+            <div class="team-category active" id="coreTeam">
+                <div class="team-grid">
+                    <!-- Core team will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+          
+            
+           <!-- Contact Section -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Connect with us through multiple channels</p>
+        </div>
+        
+        <!-- Two Column Layout -->
+        <div class="contact-two-column">
+            <!-- Left Column - WhatsApp Info -->
+            <div class="contact-left">
+                <div class="whatsapp-info-card">
+                    <div class="whatsapp-icon-header">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>Join Our Community</h3>
+                    </div>
+                    
+                    <div class="whatsapp-features-list">
+                        <h4>Why Join WhatsApp Group?</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-bullhorn"></i>
+                                <div>
+                                    <strong>Instant Announcements</strong>
+                                    <p>Get immediate updates about events and workshops</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-question-circle"></i>
+                                <div>
+                                    <strong>Q&A Sessions</strong>
+                                    <p>Direct interaction with mentors and seniors</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>Coding Support</strong>
+                                    <p>24/7 help for your coding problems</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Event Notifications</strong>
+                                    <p>Never miss any club activity</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://chat.whatsapp.com/GXtNVWbiDFi1IkRotX9yOW" target="_blank" class="join-whatsapp-btn">   
+                            <i class="fab fa-whatsapp"></i>
+                            Join WhatsApp Group
+                        </a>
+                        
+                        <!-- <p class="whatsapp-note">
+                            <i class="fas fa-info-circle"></i>
+                        
+                        </p> -->
+                    </div>
+                </div>
+                
+                <!-- Alternative Contact Methods -->
+                <div class="alternative-contact">
+                    <h3>Other Ways to Connect</h3>
+                    <div class="alt-contact-grid">
+                        <div class="alt-contact-item">
+                            <div class="alt-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="alt-content">
+                                <h4>Email Us</h4>
+                                <p>ctc@recsonbhadra.ac.in</p>
+                                <a href="mailto:ctc@recsonbhadra.ac.in">Send Email →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="alt-contact-item">
+                            <div class="alt-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="alt-content">
+                                <h4>Instagram</h4>
+                                <p>@ctc_recsonbhadra</p>
+                                <a href="https://www.instagram.com/ctc_recsonbhadra?igsh=NW81azJ2OHJzbzJq" target="_blank">DM on Instagram →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="alt-contact-item">
+                            <div class="alt-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="alt-content">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 10AM - 4PM</p>
+                                <p>Sat: 10AM - 2PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Contact Form -->
+            <div class="contact-right">
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <h3>Send Your Query</h3>
+                        <p>Have questions? Fill the form below and we'll get back to you</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqawkzgo" method="POST">
+                        <input type="hidden" name="_subject" value="New Query from Coding Club Website">
+                        <input type="hidden" name="_replyto" value="">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Full Name *
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp Number (Optional)
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter WhatsApp number">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="subject">
+                                    <i class="fas fa-tag"></i>
+                                    Query Type *
+                                </label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select your query type</option>
+                                    <option value="Membership">Membership Inquiry</option>
+                                    <option value="Event">Event Registration</option>
+                                    <option value="Workshop">Workshop Details</option>
+                                    <option value="Technical">Technical Help</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i>
+                                    Your Message *
+                                </label>
+                                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">
+                                Subscribe to newsletter for updates & announcements
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-form-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        
+                        <p class="form-footer-note">
+                            <i class="fas fa-shield-alt"></i>
+                            We respect your privacy and will never share your information
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        .
+       
+   
+                </div>
+            </div>
+        </div>
+        
+      
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets\logo\logo-icon.png" alt="Coding Club Logo" class="footer-logo-image">
+                <div class="footer-logo-text">
+                    <h3 class="footer-title">Community for Technology and Coding</h3>
+                    <p class="footer-subtitle"> REC ,Sonbhadra</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#domains" class="footer-link">Domains</a>
+                    <a href="#events" class="footer-link">Events</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                
+                    <a href="#team" class="footer-link">Team</a>
+                    <a href="http://recsonbhadra.ac.in" target="_blank" class="footer-link">REC Website</a>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ctc_recsonbhadra?igsh=NW81azJ2OHJzbzJq" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/SKM2227229725/" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/community-for-technology-and-coding-ctc-rec-sonbhadra/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ctc_recsonbhadra?igsh=NW81azJ2OHJzbzJq" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; <span id="currentYear"></span> Coding Club CTC | Maintained by Shailesh Kumar. All rights reserved.
+            </p>
+            <p class="developed-by">
+                Designed & Developed by <a href="https://github.com/SKM2227229725/" target="_blank" class="developer-link">Coding Club Team</a>
+            </p>
+            <p class="institute-link">
+                <a href="http://recsonbhadra.ac.in" target="_blank" class="institute-link-text">Rajkiya Engineering College, Sonbhadra</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <img src="" alt="" class="modal-image" id="modalImage">
+            <p class="modal-caption" id="modalCaption"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
