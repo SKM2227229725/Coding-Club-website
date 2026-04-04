@@ -89,22 +89,10 @@ Gallery section for events
 
 Backend integration
 
-🤝 Contribution
-
-Contributions are welcome!
-
-Fork the repository
-
-Make your changes
-
-Commit and push
-
-Create a Pull Request
-
 📄 License
 
 This project is licensed under the MIT License.
-👨‍💻 Maintained By
+👨‍💻 Maintained By shailesh  kumar
 
 Coding Club Team
 Rajkiya Engineering College, Sonbhadra
